@@ -5,7 +5,7 @@ const fs = require('fs');
 
 // const telegramApi  = require(node-TelegramBot)
 
-const tokren = '5594015621:AAFCXdV1fTS52_XQ4WX26N3JnB4FaAqe3j0';
+const tokren = '';
 
 const bot = new TelegramBot(tokren, {polling: true});
 
