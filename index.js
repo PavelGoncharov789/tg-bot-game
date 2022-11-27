@@ -1,3 +1,7 @@
+
+const express = require('express');
+
+const app = express(); 
 const TelegramBot = require("node-telegram-bot-api");
 const {gameOptions, againOptions} = require('./options');
 const readXlsxFile = require('read-excel-file/node');
@@ -83,3 +87,5 @@ bot.on('callback_query', async msg => {
 };
 
 start();
+
+module.exports = app;
