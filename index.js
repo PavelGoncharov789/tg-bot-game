@@ -3,9 +3,7 @@ const {gameOptions, againOptions} = require('./options');
 const readXlsxFile = require('read-excel-file/node');
 const fs = require('fs');
 
-// const telegramApi  = require(node-TelegramBot)
-
-const tokren = '';
+const tokren = '5594015621:AAFCXdV1fTS52_XQ4WX26N3JnB4FaAqe3j0';
 
 const bot = new TelegramBot(tokren, {polling: true});
 
@@ -14,10 +12,10 @@ let words;
 const variantAnswer = [];
 let answer;
 
-
 const startGame = async(chatId) => {
 
     variantAnswer.length = 0;
+    answer = null;
     while (variantAnswer.length < 5) {
         const randomWords = Math.floor(Math.random() * words.length);
         if (!variantAnswer.includes(randomWords))
@@ -76,8 +74,6 @@ bot.on('callback_query', async msg => {
     } else {
         await bot.sendMessage(chatId, `Твой вариант ответа ${data}`)
     };
-    console.log(chats[chatId], variantAnswer);
-    console.log(words[chats[chatId]].includes(data));
     if (words[chats[chatId]].includes(data)) {
         return await  bot.sendMessage(chatId, `Верно ${data} = ${words[chats[chatId]][1]}`, againOptions)
     } else {
