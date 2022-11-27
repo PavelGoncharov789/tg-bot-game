@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "nodemon index.js",
     "start": "node index.js",
-    "build": "cross-env node index.js"
+    "build": "node index.js"
   },
   "keywords": [],
   "author": "",
@@ -15,8 +15,5 @@
     "node-telegram-bot-api": "^0.60.0",
     "nodemon": "^2.0.20",
     "read-excel-file": "^5.5.3"
-  },
-  "devDependencies": {
-    "cross-env": "^7.0.3"
   }
 }
