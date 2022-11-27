@@ -1,1 +1,0 @@
-{"id":"1bec9077-9518-40e1-97c1-04a6451a8cd8","space":40182,"runtime":"nodejs14.x","name":"bot_ulbi","path":"74sw8g","project":"a09q0zc4","account":"144798365827","region":"eu-central-1","deps":["node-telegram-bot-api@^0.60.0","nodemon@^2.0.20","read-excel-file@^5.5.3"],"envs":null,"public":true,"log_level":"off","cron":""}
